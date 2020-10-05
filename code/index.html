@@ -11,66 +11,100 @@
     <!--TOP SECTION: Section for hero image, social media icons, portfolio: Name, Title: Frontend developer + designer and image in circle of me  -->
     <header>
         <!-- DIV for SM icons -->
-        <div></div>
+        <div>
+            <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
+                <img src="./assets/Linkedin.png" alt="Icon of Linkedin logo">
+            </a>
+        </div>
+        <div>
+            <a href="https://github.com/ClaireCaudwell" target="_blank">
+                <img src="./assets/Github.png" alt="Icon of GitHub logo">
+            </a>
+        </div>
+        <div>
+            <a href="https://stackexchange.com/users/19239637/claire-caudwell" target="_blank">
+                <img src="./assets/Stack.png" alt="Icon of Stackoverflow logo">
+            </a>
+        </div>
         <!-- Header group area for h4, h1 & h3 -->
-        <hgroup>
-            <h4>PORTFOLIO: CLAIRE CAUDWELL</h4>
+        <div>
+            <div class="name-title">
+                <h4>PORTFOLIO:</h4>
+                <h4>CLAIRE CAUDWELL</h4>
+            </div>
             <h1>frontend developer</h1>
             <h3>+ designer</h3>
-        </hgroup>
+            <img src="./assets/Paint-background.jpg" alt="Image of a marbeled painted background" height="200">
+        </div>
         <!-- DIV for image in circle -->
         <div></div>
     </header>
 
     <!-- SUMMARY SECTION: Section introducing myself -->
-    <section>
-        <P></P>
-    </section>
+    <div>
+        <div class="summary-slider"></div>
+        <P>Hello! I'm a frontend developer who has a background in textile and pattern design. I'm currently on my frontend developer journey at the Technigo Bootcamp.</P>
+    </div>
 
     <!-- TECH section -->
     <aside>
-        <h3></h3>
-        <p></p>
+        <h3>TECH</h3>
+        <p>HTML, CSS, Flexbox, JavaScript, API's, Mob programming, pair programming and accessibility</p>
     </aside>
 
     <!-- FEATURED & OTHER PROJECTS: Projects I'm most proud of & other ones go here -->
     <main>
         <!-- MOST PROUD PROJECTS -->
-        <section>
+        <section class="project-container">
             <h2>FEATURED PROJECTS</h2>
-            <div>
-                <a href="http://">
-                    <img src="" alt="">
-                    <p></p>            
+            <div class="project-item">
+                <a href="https://github.com/ClaireCaudwell/project-weather-app" target="_blank">
+                    <img src="./assets/weather-app.png" alt="Image of my weather app">
+                    <p>WEATHER APP: Weather app built with a combination of HTML, CSS and JavaScript</p>            
                 </a>            
                 <!-- DIV for small tags -->
-                <div>
-                    <p></p>
+                <div class="small-tags">
+                    <p>HTML5</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
                 </div>            
             </div>
-            <div> 
-                <a href="http://">  
-                    <img src="" alt="">
-                    <p></p>            
+            <div class="project-item"> 
+                <a href="https://github.com/ClaireCaudwell/project-business-site" target="_blank">  
+                    <img src="./assets/house-plant-hotel.png" alt="Image of my house plant hotel page" >
+                    <p>HOUSE PLANT HOTEL: Business site where we had to create a responsive site with a hero image, form and accordian.</p>            
                 </a>            
-                <div>
-                    <p></p>
+                <div class="small-tags">
+                    <p>HTML5</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
                 </div>            
             </div>
         </section>
 
         <!-- OTHER PROJECTS -->
-        <section>
+        <section class="project-container">
             <h2>OTHER PROJECTS</h2>
-            <div>
-                <a href="http://"> 
-                    <p></p>            
+            <div class="project-item">
+                <a href="https://github.com/ClaireCaudwell/project-pizza-bot" target="_blank"> 
+                    <p>PIZZA BOT: A pair programming projects were we created a pizza bot using javascript, styled in CSS.</p>            
                 </a>            
                 <!-- DIV for small tags -->
-                <div>
-                    <p></p>
-                    <h4><h4>
-                    <p></p>
+                <div class="small-tags">
+                    <p>HTML5</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>            
+            </div> 
+            <div class="project-item">
+                <a href="https://github.com/ClaireCaudwell/project-cluedo" target="_blank"> 
+                    <p>CLUEDO MYSTERY PICKER: A fun project where I created cards for the user to click on and then click a button to reveal the murderer.</p>            
+                </a>            
+                <!-- DIV for small tags -->
+                <div class="small-tags">
+                    <p>HTML5</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
                 </div>            
             </div> 
         </section>       
@@ -78,21 +112,30 @@
 
     <!-- MY THOUGHTS SECTION: Almost like a blog post area -->
     <article>
-        </section>
+        <div>
             <h2>MY THOUGHTS</h2>
             <div>
-                <img src="" alt="">
-                <p></p>
+                <img src="./assets/my-thoughts.jpg" alt="Image of a desk with a computer, a cup of coffee and some post-it notes scrumpled up." width="500">
+                <p>OCT 2020</p>
+                <h4>CREATING MY PORTFOLIO: The experience</h4>
+                <p>What I learnt whilst creating my portfolio. There was alot of stuff like accessibility and creating a webpage for different browsers. Also how to implement someone else's design template. It was hard, but I got there in the end with help of HTML5 and CSS!</p>
             </div>
-        </section> 
-    <section>
-        <h2>OTHER THOUGHTS</h2>
-        <div>
-            <img src="" alt="">
-            <p></p>
         </div>
-    </section>
-
+        <div>
+            <h2>OTHER THOUGHTS</h2>
+            <div>
+                <p>Sept 2020</p>
+                <h4>How to not panic when learning to code</h4>
+            </div>
+            <div>
+                <p>AUG 2020</p>
+                <h4>The bootcamp has officially begun</h4>
+            </div>
+            <div>
+                <p>JULY 2020</p>
+                <h4>Trying to learn as much as my brain can handle before the bootcamp begins!</h4>
+            </div>
+        </div>
     </article>
 
     <!-- SKILLS: List of my skills -->
@@ -100,38 +143,38 @@
         <h2>SKILLS</h2>
         <div>
             <h4>CODE</h4>
-            <li>
-                <ul>HTML 5</ul>
-                <ul>CSS3</ul>
-                <ul>JavaScript ES6</ul>
-                <ul>GitHub</ul> 
-            </li>
+            <ul>
+                <li>HTML 5</li>
+                <li>CSS3</li>
+                <li>JavaScript ES6</li>
+                <li>GitHub</li> 
+            </ul>
         </div>
         <div>
             <h4>CODE TO LEARN</h4>
-            <li>
-                <ul>REACT</ul>
-                <ul>Node.js</ul>
-                <ul>Redux</ul>
-            </li>
+            <ul>
+                <li>REACT</li>
+                <li>Node.js</li>
+                <li>Redux</li>
+            </ul>
         </div>
         <div>
             <h4>TOOLBOX</h4>
-            <li>
-                <ul>Adobe Photoshop</ul>
-                <ul>Adobe Illustrator</ul>
-                <ul>Microsoft office</ul>
-                <ul>Slack</ul>
-            </li>
+            <ul>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Microsoft office</li>
+                <li>Slack</li>
+            </ul>
         </div>
         <div>
             <h4>MORE</h4>
-            <li>
-                <ul>Colour selection</ul>
-                <ul>Pattern generation</ul>
-                <ul>Design concept</ul>
-                <ul>Design development</ul>
-            </li>
+            <ul>
+                <li>Colour selection</li>
+                <li>Pattern generation</li>
+                <li>Design concept</li>
+                <li>Design development<li>
+            </ul>
         </div>
     </aside>
 
@@ -139,16 +182,22 @@
     <aside>
         <h2>FOR MORE</h2>
         <div>
-            <img src="" alt="">
-            <p></p>
+            <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
+                <img src="./assets/Linkedin.png" alt="Linkedin icon image">
+            </a>
+            <p>LINKEDIN</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p></p>
+            <a href="https://github.com/ClaireCaudwell">
+                <img src="./assets/Github.png" alt="GitHub icon image">
+            </a>
+            <p>GITHUB</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p></p>
+            <a href="https://stackexchange.com/users/19239637/claire-caudwell">
+                <img src="./assets/Stack.png" alt="Stackoverflow icon image">
+            </a>
+            <p>STACKOVERFLOW</p>
         </div>
     </aside>
 
