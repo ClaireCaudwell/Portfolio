@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Font weights:
+Montserrat:  400(Regular), 500(Medium) and 700(Bold) 
+Roboto: 400(Regular) and 700(Bold)*/
