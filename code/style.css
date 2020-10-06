@@ -122,6 +122,7 @@ header {
     font-size: 18px;
     background: #e4efe0;
     color: #1f251f;
+    line-height: 2;
 }
 
 .cylinder {
@@ -168,9 +169,14 @@ header {
     font-size: 18px;
     font-weight: 400;
     color: #1f251f;
+    line-height: 2;
 }
 
 /* PROJECT SECTION */
+
+main {
+    width: 100%;
+}
 
 .project-container {
     display: flex;
@@ -223,6 +229,7 @@ header {
     font-weight: 400;
     color: #1f251f;
     margin-bottom: 0;
+    line-height: 2;
 }
 
 .project-text:hover {
@@ -232,6 +239,7 @@ header {
 .text-description {
     color: #f8a72e;
     font-weight: 700;
+    line-height: 2;
 }
 
 .small-tags {
@@ -247,4 +255,98 @@ header {
     font-weight: 400;
     margin-right: 13px;
     margin-top: 15px;
+}
+
+/* ARTICLE SECTION */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #fff;
+    margin: 0;
+    width: 100%;
+}
+
+.thoughts-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    width: 300px;
+}
+
+.thoughts-date {
+    font-family: 'Roboto', sans-serif;
+    color: #f8a72e;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.thoughts-title {
+    font-family: 'Roboto', sans-serif;
+    color: #1f251f;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.thoughts-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1f251f;
+    margin-bottom: 0;
+    margin-top: 5px;
+    line-height: 2;
+}
+
+.other-thoughts-div {
+    padding: 10px 0;
+}
+
+/* SKILLS SECTION */
+
+aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #e4efe0;
+    margin: 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skills-card {
+    text-align: center;
+    margin-left: 10px;
+    width: 150px
+}
+
+.skills-card h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f8a72e;
+    margin-bottom: 3px;
+}
+
+.skills-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1f251f;
+    margin: 5px 0;
 }
