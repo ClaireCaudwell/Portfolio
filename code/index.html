@@ -10,7 +10,7 @@
 <body>
     <!--TOP SECTION: Section for hero image, social media icons, portfolio: Name, Title: Frontend developer + designer and image in circle of me  -->
     <header>
-        <img src="./assets/Leaves-background.jpg" alt="Image of a marbeled painted background" tabindex="0" class="hero-image">
+        <img src="./assets/Leaves-background.jpg" alt="Image of a leafy background" tabindex="0" class="hero-image">
         <!-- DIV for SM icons -->
         <div class="socialmedia-icon-container">           
             <div class="sm-icon-container">
@@ -23,7 +23,6 @@
                     <img src="./assets/Github.png" alt="Icon of GitHub logo" class="sm-icon">
                 </a>
             </div>
-
              <div class="sm-icon-container">
                 <a href="https://stackexchange.com/users/19239637/" target="_blank">
                     <img src="./assets/Stack.png" alt="Icon of Stackoverflow logo" class="sm-icon">
@@ -159,7 +158,7 @@
     </article>
 
     <!-- SKILLS: List of my skills -->
-    <aside>
+    <aside class="skills-section">
         <h2 tabindex="0" class="main-title">SKILLS</h2>
         <div class="skills-container">
             <div class="skills-card">
@@ -184,8 +183,11 @@
             </div>
             <div class="skills-card">
                 <h4 tabindex="0">MORE</h4>
+                <p tabindex="0">Pair programming</p>
+                <p tabindex="0">Mob programming</p>
                 <p tabindex="0">Colour</p>
                 <p tabindex="0">Patterns</p>
+                <p tabindex="0">Graphic design</p>
                 <p tabindex="0">Design concept</p>
                 <p tabindex="0">Design development<p>
             </div>
@@ -193,32 +195,40 @@
     </aside>
 
     <!-- FOR MORE: Links to other social media etc -->
-    <aside>
-        <h2 tabindex="0">FOR MORE</h2>
-        <div>
-            <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
-                <img src="./assets/Linkedin.png" alt="Linkedin icon image">
-            </a>
-            <p>LINKEDIN</p>
-        </div>
-        <div>
-            <a href="https://github.com/ClaireCaudwell">
-                <img src="./assets/Github.png" alt="GitHub icon image">
-            </a>
-            <p>GITHUB</p>
-        </div>
-        <div>
-            <a href="https://stackexchange.com/users/19239637/claire-caudwell">
-                <img src="./assets/Stack.png" alt="Stackoverflow icon image">
-            </a>
-            <p>STACKOVERFLOW</p>
+    <aside class="formore-section">
+        <h2 tabindex="0" class="main-title">FOR MORE</h2>
+        <div class="formore-container">
+            <div class="icon-container">
+                <div class="icon-circle">
+                    <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
+                        <img src="./assets/Linkedin.png" alt="Icon of Linkedin logo" class="sm-icon">
+                    </a>
+                </div>
+                <p>LINKEDIN</p>
+            </div>
+            <div class="icon-container">
+                 <div class="icon-circle">
+                    <a href="https://github.com/ClaireCaudwell" target="_blank">
+                        <img src="./assets/Github.png" alt="Icon of GitHub logo" class="sm-icon">
+                    </a>
+                </div>
+                <p>GITHUB</p>
+            </div>
+            <div class="icon-container">
+                <div class="icon-circle">
+                    <a href="https://stackexchange.com/users/19239637/" target="_blank">
+                        <img src="./assets/Stack.png" alt="Icon of Stackoverflow logo" class="sm-icon">
+                    </a>
+                </div>
+                <p>STACKOVERFLOW</p>
+            </div>
         </div>
     </aside>
 
     <!-- Contact details -->
     <footer>
-        <h2 tabindex="0">CONTACT</h2>
-        <P tabindex="0">Claire Caudwell</P>
+        <h2 tabindex="0" class="main-title-footer">CONTACT</h2>
+        <P tabindex="0" class="footer-name">Claire Caudwell</P>
         <p tabindex="0">+46 00000 0000</p>
         <p tabindex="0">email</p>
     </footer>    
