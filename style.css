@@ -8,6 +8,20 @@ body {
     margin: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 10px;
+    background-image: url("Painted-background.jpg");
+}
+
+.header-details {
+    background: lightgreen;
+}
+
+
+
 /* Font weights:
 Montserrat:  400(Regular), 500(Medium) and 700(Bold) 
 Roboto: 400(Regular) and 700(Bold)*/
