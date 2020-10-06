@@ -46,79 +46,97 @@
     </header>
 
     <!-- SUMMARY SECTION: Section introducing myself -->
-    <div>
-        <div class="summary-slider"></div>
-        <P tabindex="0">Hello! I'm a frontend developer who has a background in textile and pattern design. I'm currently on my frontend developer journey at the Technigo Bootcamp.</P>
-    </div>
+    <section class="summary-container">
+        <p tabindex="0"><span class="cylinder"></span><span class="circle"></span> Hello! I'm a frontend developer who has a background in textile and pattern design. I'm currently on my frontend developer journey at the Technigo Bootcamp.</p>      
+    </section>
 
     <!-- TECH section -->
-    <aside>
-        <h3 tabindex="0">TECH</h3>
-        <p tabindex="0">HTML, CSS, Flexbox, JavaScript, API's, Mob programming, pair programming and accessibility</p>
+    <aside class="tech-container">
+        <h3 tabindex="0" class="main-title">TECH</h3>
+        <p tabindex="0" class="main-description">HTML, CSS, Flexbox, JavaScript, API's, Mob programming, pair programming and accessibility</p>
     </aside>
 
     <!-- FEATURED & OTHER PROJECTS: Projects I'm most proud of & other ones go here -->
     <main>
         <!-- MOST PROUD PROJECTS -->
         <section class="project-container">
-            <h2 tabindex="0">FEATURED PROJECTS</h2>
-            <div class="project-item">
+            <h2 tabindex="0" class="main-title">FEATURED PROJECTS</h2>
+            <div class="project-card">
                 <a href="https://github.com/ClaireCaudwell/project-weather-app" target="_blank">
-                    <img src="./assets/weather-app.png" alt="Image of Claire's weather app" width="200">
-                    <p>WEATHER APP: Built with a combination of HTML, CSS and JavaScript</p>            
+                    <img src="./assets/weather-app.jpg" alt="Image of Claire's weather app" class="project-image">
+                    <!-- <h2 class="image-title">WEATHER APP</h2> -->
+                    <p class="project-text"><span class="text-description"> WEATHER APP:</span> Built a responsive weather app fetching the data from an api in JavaScript and working with promises and JSON <span class="text-description">>></span></p>            
                 </a>            
                 <!-- DIV for small tags -->
                 <div class="small-tags" tabindex="0">
                     <p>HTML5</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                </div>            
+                    <p>CSS 3</p>
+                    <p>JavaScript ES6</p>
+                    <p>API's</p>
+                    <p>Flexbox</p>
+                </div>  
             </div>
-            <div class="project-item"> 
-                <a href="https://github.com/ClaireCaudwell/project-business-site" target="_blank">  
-                    <img src="./assets/house-plant-hotel.png" alt="Image of my house plant hotel page" width="200">
-                    <p>HOUSE PLANT HOTEL: Business site where we had to create a responsive site with a hero image, form and accordian.</p>            
+            <div class="project-card">
+                <a href="https://github.com/ClaireCaudwell/project-business-site" target="_blank">
+                    <img src="./assets/house-plant-hotel.jpg" alt="Image of my house plant hotel page" class="project-image">
+                    <!-- <h2 class="image-title">BUSINESS PAGE</h2> -->
+                    <p class="project-text"><span class="text-description"> HOUSE PLANT HOTEL:</span> Created a responsive business site with a hero image, form and accordian <span class="text-description">>></span></p>            
                 </a>            
+                <!-- DIV for small tags -->
                 <div class="small-tags" tabindex="0">
                     <p>HTML5</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                </div>            
+                    <p>CSS 3</p>
+                    <p>JavaScript ES6</p>
+                    <p>Responsive</p>
+                </div>  
             </div>
-        </section>
+            <div class="project-card">
+                <a href="https://github.com/ClaireCaudwell/project-cluedo" target="_blank">
+                    <img src="./assets/cluedo-project.jpg" alt="Image of my house plant hotel page" class="project-image">
+                    <!-- <h2 class="image-title">BUSINESS PAGE</h2> -->
+                    <p class="project-text"><span class="text-description"> CLUEDO MYSTERY PICKER:</span> A fun project where we were set the task to create a card game based on the game Cluedo. The project included  CSS for styling the page and cards and JavaScript for creating different functions to make the game run smoothly <span class="text-description">>></span></p>            
+                </a>            
+                <!-- DIV for small tags -->
+                <div class="small-tags" tabindex="0">
+                    <p>HTML5</p>
+                    <p>CSS 3</p>
+                    <p>JavaScript ES6</p>
+                    <p>CSS Animation</p>
+                </div>  
+            </div>
+            <!-- OTHER PROJECTS --> 
+            <h2 tabindex="0" class="main-title">OTHER PROJECTS</h2>
+            <div class="project-card">
+                <a href="https://github.com/ClaireCaudwell/project-pizza-bot" target="_blank">
+                    <p class="project-text"><span class="text-description"> PIZZA BOT:</span> A pair programming project where we created a pizza bot using javascript, styled in CSS <span class="text-description">>></span></p>            
+                </a>            
+                <!-- DIV for small tags -->
+                <div class="small-tags" tabindex="0">
+                    <p>HTML5</p>
+                    <p>CSS 3</p>
+                    <p>JavaScript ES6</p>
+                    <p>Interactive</p>
+                </div>  
+            </div>
 
-        <!-- OTHER PROJECTS -->
-        <section class="project-container">
-            <h2 tabindex="0">OTHER PROJECTS</h2>
-            <div class="project-item">
-                <a href="https://github.com/ClaireCaudwell/project-pizza-bot" target="_blank"> 
-                    <p>PIZZA BOT: A pair programming project where we created a pizza bot using javascript, styled in CSS.</p>            
+            <div class="project-card">
+                <a href="https://github.com/ClaireCaudwell/project-cluedo" target="_blank">
+                    <p class="project-text"><span class="text-description"> UPCOMING PROJECTS:</span> I will update soon with new projects as the bootcamp develops <span class="text-description">>></span></p>            
                 </a>            
                 <!-- DIV for small tags -->
                 <div class="small-tags" tabindex="0">
                     <p>HTML5</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                </div>            
-            </div> 
-            <div class="project-item">
-                <a href="https://github.com/ClaireCaudwell/project-cluedo" target="_blank"> 
-                    <p>CLUEDO MYSTERY PICKER: A fun project where I created cards for the user to click on and then click a button to reveal the murderer.</p>            
-                </a>            
-                <!-- DIV for small tags -->
-                <div class="small-tags" tabindex="0">
-                    <p>HTML5</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                </div>            
-            </div> 
-        </section>       
+                    <p>CSS 3</p>
+                    <p>JavaScript ES6</p>
+                </div>  
+            </div>
+        </section>      
     </main>
 
     <!-- MY THOUGHTS SECTION: Almost like a blog post area -->
     <article>
-        <div>
-            <h2 tabindex="0">MY THOUGHTS</h2>
+        <div class="main-article">
+            <h2 tabindex="0" class="main-title">MY THOUGHTS</h2>
             <div>
                 <img src="./assets/my-thoughts.jpg" alt="Image of a desk with a computer, a cup of coffee and some post-it notes scrumpled up." width="500" tabindex="0">
                 <p tabindex="0">OCT 2020</p>
