@@ -28,7 +28,7 @@ header {
 .hero-image {
     position: absolute;
     z-index: -1;
-    height:74%;
+    height: 66%;
     width: 100%;
     opacity: 0.5;
     object-fit: cover;
@@ -45,8 +45,8 @@ header {
 }
 
 .sm-icon-container {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     /* border: 3px solid #f8a72e; */
     background: #f8a72e;
@@ -59,8 +59,8 @@ header {
 .sm-icon {
     width: 25px;
     height: 25px;
-    margin-left: -7px;
-    margin-top: -9px;
+    margin-left: -15px;
+    margin-top: -10px;
 }
 
 .header-text {
@@ -126,7 +126,7 @@ header {
 }
 
 .cylinder {
-    width: 50px;
+    width: 40px;
     height: 3px;
     border-radius: 10px;
     background: #f8a72e;
@@ -311,7 +311,7 @@ article {
 
 /* SKILLS SECTION */
 
-aside {
+.skills-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -350,3 +350,95 @@ aside {
     color: #1f251f;
     margin: 5px 0;
 }
+
+/* FOR MORE SECTION */
+
+.formore-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #fff;
+    margin: 0;
+}
+
+.formore-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.icon-container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color:  #f8a72e;
+}
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* border: 3px solid #f8a72e; */
+    background: #f8a72e;
+    margin-top: 10px;
+    padding: 20px;
+    object-fit: contain;  
+}
+
+.sm-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: -10px;
+    margin-top: -11px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #e4efe0;
+    margin: 0;
+    color: #1f251f;
+}
+
+.main-title-footer {
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.footer-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+
+
