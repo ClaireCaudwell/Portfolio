@@ -3,41 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Claire Caudwell Portfolio</title>
 </head>
 <body>
     <!--TOP SECTION: Section for hero image, social media icons, portfolio: Name, Title: Frontend developer + designer and image in circle of me  -->
     <header>
+        <img src="./assets/Leaves-background.jpg" alt="Image of a marbeled painted background" tabindex="0" class="hero-image">
         <!-- DIV for SM icons -->
-        <div>
-            <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
-                <img src="./assets/Linkedin.png" alt="Icon of Linkedin logo">
-            </a>
-        </div>
-        <div>
-            <a href="https://github.com/ClaireCaudwell" target="_blank">
-                <img src="./assets/Github.png" alt="Icon of GitHub logo">
-            </a>
-        </div>
-        <div>
-            <a href="https://stackexchange.com/users/19239637/claire-caudwell" target="_blank">
-                <img src="./assets/Stack.png" alt="Icon of Stackoverflow logo">
-            </a>
-        </div>
-        <!-- Header group area for h4, h1 & h3 -->
-        <div>
-            <div tabindex="0" class="name-title">
-                <h4>PORTFOLIO:</h4>
-                <h4>CLAIRE CAUDWELL</h4>
+        <div class="socialmedia-icon-container">           
+            <div class="sm-icon-container">
+                <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
+                    <img src="./assets/Linkedin.png" alt="Icon of Linkedin logo" class="sm-icon">
+                </a>
             </div>
-            <h1 tabindex="0">frontend developer</h1>
-            <h3 tabindex="0">+ designer</h3>
-            <img src="./assets/Paint-background.jpg" alt="Image of a marbeled painted background" height="200" tabindex="0">
+            <div class="sm-icon-container">
+                <a href="https://github.com/ClaireCaudwell" target="_blank">
+                    <img src="./assets/Github.png" alt="Icon of GitHub logo" class="sm-icon">
+                </a>
+            </div>
+
+             <div class="sm-icon-container">
+                <a href="https://stackexchange.com/users/19239637/" target="_blank">
+                    <img src="./assets/Stack.png" alt="Icon of Stackoverflow logo" class="sm-icon">
+                </a>
+            </div>
         </div>
-        <!-- DIV for image in circle -->
-        <div tabindex="0"></div>
+        <!-- Area for h4, h1 & h3 -->
+        <div class="header-text">
+            <div tabindex="0" class="header-title">
+                <h4 class="portfolio">PORTFOLIO:</h4>
+                <h4 class="name">CLAIRE CAUDWELL</h4>
+            </div>
+            <h1 tabindex="0" class="headertext-one">frontend developer</h1>
+            <h3 tabindex="0" class="headertext-two">+ designer</h3>
+            <!-- DIV for image in circle -->
+            <div tabindex="0" class="profile-image-container">
+                <img src="./assets/Claire.JPG" alt="Image of Claire" class="profile-image">
+            </div>
+        </div>
     </header>
 
     <!-- SUMMARY SECTION: Section introducing myself -->
