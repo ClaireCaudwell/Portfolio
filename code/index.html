@@ -9,63 +9,66 @@
 </head>
 <body>
     <!--TOP SECTION: Section for hero image, social media icons, portfolio: Name, Title: Frontend developer + designer and image in circle of me  -->
-    <header>
-        <img src="./assets/Leaves-background.jpg" alt="Image of a leafy background" tabindex="0" class="hero-image">
-        <!-- DIV for SM icons -->
-        <div class="socialmedia-icon-container">           
-            <div class="sm-icon-container">
-                <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
-                    <img src="./assets/Linkedin.png" alt="Icon of Linkedin logo" class="sm-icon">
-                </a>
+    <main class="main-container">
+        <header class="hero-image">
+            <!-- DIV for social media icons -->
+            <div class="socialmedia-icon-container">           
+                <div class="sm-icon-container">
+                    <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
+                        <img src="./assets/Linkedin.png" alt="Icon of Linkedin logo" class="sm-icon">
+                    </a>
+                </div>
+                <div class="sm-icon-container">
+                    <a href="https://github.com/ClaireCaudwell" target="_blank">
+                        <img src="./assets/Github.png" alt="Icon of GitHub logo" class="sm-icon">
+                    </a>
+                </div>
+                <div class="sm-icon-container">
+                    <a href="https://stackexchange.com/users/19239637/" target="_blank">
+                        <img src="./assets/Stack.png" alt="Icon of Stackoverflow logo" class="sm-icon">
+                    </a>
+                </div>
             </div>
-            <div class="sm-icon-container">
-                <a href="https://github.com/ClaireCaudwell" target="_blank">
-                    <img src="./assets/Github.png" alt="Icon of GitHub logo" class="sm-icon">
-                </a>
+            <!-- DIV for text -->
+            <div class="header-text">
+                <div tabindex="0" class="header-title">
+                    <h4 class="portfolio">PORTFOLIO:</h4>
+                    <h4 class="name">CLAIRE CAUDWELL</h4>
+                </div>
+                <h1 tabindex="0" class="headertext-one">frontend developer</h1>
+                <h3 tabindex="0" class="headertext-two">+ designer</h3>
+                <!-- DIV for image in circle -->
+                <div tabindex="0" class="profile-image-container">
+                    <img src="./assets/Claire.JPG" alt="Image of Claire" class="profile-image">
+                </div>
             </div>
-             <div class="sm-icon-container">
-                <a href="https://stackexchange.com/users/19239637/" target="_blank">
-                    <img src="./assets/Stack.png" alt="Icon of Stackoverflow logo" class="sm-icon">
-                </a>
-            </div>
-        </div>
-        <!-- Area for h4, h1 & h3 -->
-        <div class="header-text">
-            <div tabindex="0" class="header-title">
-                <h4 class="portfolio">PORTFOLIO:</h4>
-                <h4 class="name">CLAIRE CAUDWELL</h4>
-            </div>
-            <h1 tabindex="0" class="headertext-one">frontend developer</h1>
-            <h3 tabindex="0" class="headertext-two">+ designer</h3>
-            <!-- DIV for image in circle -->
-            <div tabindex="0" class="profile-image-container">
-                <img src="./assets/Claire.JPG" alt="Image of Claire" class="profile-image">
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- SUMMARY SECTION: Section introducing myself -->
-    <section class="summary-container">
-        <p tabindex="0"><span class="cylinder"></span><span class="circle"></span> Hello! I'm a frontend developer who has a background in textile and pattern design. I'm currently on my frontend developer journey at the Technigo Bootcamp.</p>      
-    </section>
+        <!-- SUMMARY SECTION -->
+        <section class="summary-container">
+            <p tabindex="0"><span class="cylinder"></span><span class="circle"></span> Hello! I'm Claire, a frontend developer who has a background in textile and pattern design. I have a Batchelors degree in textile design and have worked in the industry as a print designer. I'm currently on my frontend developer journey at the Technigo Bootcamp.</p>      
+        </section>
 
-    <!-- TECH section -->
-    <aside class="tech-container">
-        <h3 tabindex="0" class="main-title">TECH</h3>
-        <p tabindex="0" class="main-description">HTML, CSS, Flexbox, JavaScript, API's, Mob programming, pair programming and accessibility</p>
-    </aside>
+        <!-- TECH section -->
+        <aside class="tech-container">
+            <h3 tabindex="0" class="main-title">TECH</h3>
+            <div class="tech-details">
+                <p tabindex="0" class="main-description">HTML, CSS, Flexbox, JavaScript, API's, Mob programming, pair programming and accessibility</p>
+            </div>
+        </aside>
 
-    <!-- FEATURED & OTHER PROJECTS: Projects I'm most proud of & other ones go here -->
-    <main>
-        <!-- MOST PROUD PROJECTS -->
-        <section class="project-container">
+        <!-- FEATURED & OTHER PROJECTS: Projects I'm most proud of & other ones go here -->
+        <section class="project-section">
+            <!-- MOST PROUD PROJECTS -->
             <h2 tabindex="0" class="main-title">FEATURED PROJECTS</h2>
             <div class="project-card">
-                <a href="https://github.com/ClaireCaudwell/project-weather-app" target="_blank">
-                    <img src="./assets/weather-app.jpg" alt="Image of Claire's weather app" class="project-image">
-                    <!-- <h2 class="image-title">WEATHER APP</h2> -->
-                    <p class="project-text"><span class="text-description"> WEATHER APP:</span> Built a responsive weather app fetching the data from an api in JavaScript and working with promises and JSON <span class="text-description">>></span></p>            
-                </a>            
+                <!-- <a href="https://github.com/ClaireCaudwell/project-weather-app" target="_blank"> -->
+                    <div class="image-container">
+                        <div class="image-title">WEATHER APP</div>
+                        <img src="./assets/weather-app.jpg" alt="Image of Claire's weather app" class="image">
+                    </div>                        
+                    <p class="project-text"><span class="text-highlight"> WEATHER APP:</span> Built a responsive weather app fetching the data from an api in JavaScript and working with promises and JSON <span class="text-highlight">>></span></p>            
+                <!-- </a>             -->
                 <!-- DIV for small tags -->
                 <div class="small-tags" tabindex="0">
                     <p>HTML5</p>
@@ -77,9 +80,11 @@
             </div>
             <div class="project-card">
                 <a href="https://github.com/ClaireCaudwell/project-business-site" target="_blank">
-                    <img src="./assets/house-plant-hotel.jpg" alt="Image of my house plant hotel page" class="project-image">
-                    <!-- <h2 class="image-title">BUSINESS PAGE</h2> -->
-                    <p class="project-text"><span class="text-description"> HOUSE PLANT HOTEL:</span> Created a responsive business site with a hero image, form and accordian <span class="text-description">>></span></p>            
+                    <div class="image-container">
+                        <div class="image-title">BUSINESS PAGE</div>
+                        <img src="./assets/house-plant-hotel.jpg" alt="Image of my house plant hotel page" class="image">
+                    </div>
+                    <p class="project-text"><span class="text-highlight"> HOUSE PLANT HOTEL:</span> Created a responsive business site with a hero image, form and accordian <span class="text-highlight">>></span></p>            
                 </a>            
                 <!-- DIV for small tags -->
                 <div class="small-tags" tabindex="0">
@@ -91,9 +96,11 @@
             </div>
             <div class="project-card">
                 <a href="https://github.com/ClaireCaudwell/project-cluedo" target="_blank">
-                    <img src="./assets/cluedo-project.jpg" alt="Image of my house plant hotel page" class="project-image">
-                    <!-- <h2 class="image-title">BUSINESS PAGE</h2> -->
-                    <p class="project-text"><span class="text-description"> CLUEDO MYSTERY PICKER:</span> A fun project where we were set the task to create a card game based on the game Cluedo. The project included  CSS for styling the page and cards and JavaScript for creating different functions to make the game run smoothly <span class="text-description">>></span></p>            
+                    <div class="image-container">
+                        <div class="image-title">CLUEDO GAME</div>
+                        <img src="./assets/cluedo-project.jpg" alt="Image of my house plant hotel page" class="image">
+                    </div>
+                    <p class="project-text"><span class="text-highlight"> CLUEDO MYSTERY PICKER:</span> A fun project where we were set the task to create a card game based on the game Cluedo. The project included  CSS for styling the page and cards and JavaScript for creating different functions to make the game run smoothly <span class="text-highlight">>></span></p>            
                 </a>            
                 <!-- DIV for small tags -->
                 <div class="small-tags" tabindex="0">
@@ -107,7 +114,7 @@
             <h2 tabindex="0" class="main-title">OTHER PROJECTS</h2>
             <div class="project-card">
                 <a href="https://github.com/ClaireCaudwell/project-pizza-bot" target="_blank">
-                    <p class="project-text"><span class="text-description"> PIZZA BOT:</span> A pair programming project where we created a pizza bot using javascript, styled in CSS <span class="text-description">>></span></p>            
+                    <p class="project-text"><span class="text-highlight"> PIZZA BOT:</span> A pair programming project where we created a pizza bot using javascript, styled in CSS <span class="text-highlight">>></span></p>            
                 </a>            
                 <!-- DIV for small tags -->
                 <div class="small-tags" tabindex="0">
@@ -117,10 +124,9 @@
                     <p>Interactive</p>
                 </div>  
             </div>
-
             <div class="project-card">
                 <a href="https://github.com/ClaireCaudwell/project-cluedo" target="_blank">
-                    <p class="project-text"><span class="text-description"> UPCOMING PROJECTS:</span> I will update soon with new projects as the bootcamp develops <span class="text-description"> >></span></p>            
+                    <p class="project-text"><span class="text-highlight"> UPCOMING PROJECTS:</span> I will update soon with new projects as the bootcamp develops <span class="text-highlight"> >></span></p>            
                 </a>            
                 <!-- DIV for small tags -->
                 <div class="small-tags" tabindex="0">
@@ -129,108 +135,109 @@
                     <p>JavaScript ES6</p>
                 </div>  
             </div>
-        </section>      
-    </main>
+        </section>
 
-    <!-- MY THOUGHTS SECTION: Almost like a blog post area -->
-    <article>
-        <h2 tabindex="0" class="main-title">MY THOUGHTS</h2>
-        <div class="thoughts-card">
-            <img src="./assets/my-thoughts.jpg" alt="Image of a desk with a computer, a cup of coffee and some post-it notes scrumpled up." width="500" tabindex="0" class="project-image">
-            <div class="thoughts-text-area">
+        <!-- MY THOUGHTS SECTION: Almost like a blog post area -->
+        <article>
+            <h2 tabindex="0" class="main-title">MY THOUGHTS</h2>            
+            <div class="thoughts-card">
+                <img src="./assets/my-thoughts.jpg" alt="Image of a desk with a computer, a cup of coffee and some post-it notes scrumpled up."  tabindex="0" class="image">
                 <p tabindex="0" class="thoughts-date">OCT 2020</p>
                 <h4 class="thoughts-title">CREATING MY PORTFOLIO: The experience </h4>
-                <p tabindex="0" class="thoughts-text">What I learnt whilst creating my portfolio. There was alot of stuff like accessibility and creating a webpage for different browsers. Also how to implement someone else's design template. It was hard, but I got there in the end with help of HTML5 and CSS!<span class="text-description"> >></span></p>
+                <p tabindex="0" class="thoughts-text">What I learnt whilst creating my portfolio. There was alot of stuff like accessibility and creating a webpage for different browsers. Also how to implement someone else's design template. It was hard, but I got there in the end with help of HTML5 and CSS!<span class="text-highlight"> >></span></p>
             </div>
-        </div>
-        <div class="thoughts-card">
-            <h2 tabindex="0" class="main-title">OTHER THOUGHTS</h2>
-            <div class="other-thoughts-div">
-                <h4 tabindex="0" class="thoughts-title"><span class="thoughts-date">Sept 2020  </span>How to not panic when learning to code<span class="text-description"> >></span></h4>
+            <div class="thoughts-card">
+                <h2 tabindex="0" class="main-title">OTHER THOUGHTS</h2>
+                <div>
+                    <h4 tabindex="0" class="thoughts-title"><span class="thoughts-date">Sept 2020  </span>How to not panic when learning to code<span class="text-highlight"> >></span></h4>
+                </div>
+                <div>
+                    <h4 tabindex="0" class="thoughts-title"><span class="thoughts-date">Aug 2020  </span>The bootcamp has officially begun!!<span class="text-highlight"> >></span></h4>
+                </div>
+                <div>
+                    <h4 tabindex="0" class="thoughts-title"><span class="thoughts-date">July 2020  </span>Trying to learn as much as my brain can handle before the bootcamp begins!<span class="text-highlight"> >></span></h4>
+                </div>
             </div>
+        </article>
+
+        <!-- SKILLS: List of my skills -->
+        <aside class="skills-section">
+            <h2 tabindex="0" class="main-title">SKILLS</h2>
+            <div class="skills-container">
+                <div class="skills-card">
+                    <h4 tabindex="0">CODE</h4>
+                    <p tabindex="0">HTML 5</p>
+                    <p tabindex="0">CSS3</p>
+                    <p tabindex="0">JavaScript ES6</p>
+                    <p tabindex="0">GitHub</p> 
+                </div>
+                <div class="skills-card">
+                    <h4 tabindex="0">UPCOMING</h4>
+                    <p tabindex="0">REACT</p>
+                    <p tabindex="0">Node.js</p>
+                    <p tabindex="0">Redux</p>                
+                </div>
+                <div class="skills-card">
+                    <h4 tabindex="0">TOOLBOX</h4>
+                    <p tabindex="0">Photoshop</p>
+                    <p tabindex="0">Illustrator</p>
+                    <p tabindex="0">Microsoft office</p>
+                    <p tabindex="0">Slack</p>                
+                </div>
+                <div class="skills-card">
+                    <h4 tabindex="0">MORE</h4>
+                    <p tabindex="0">Pair programming</p>
+                    <p tabindex="0">Mob programming</p>
+                    <p tabindex="0">Colour</p>
+                    <p tabindex="0">Patterns</p>
+                    <p tabindex="0">Graphic design</p>
+                    <p tabindex="0">Design concept</p>
+                    <p tabindex="0">Design development<p>
+                </div>
+            </div>        
+        </aside>
+
+        <!-- FOR MORE: Links to other social media etc -->
+        <aside class="formore-section">
+            <h2 tabindex="0" class="main-title">FOR MORE</h2>
+            <div class="formore-container">
+                <div class="icon-container">
+                    <div class="icon-circle">
+                        <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
+                            <img src="./assets/Linkedin.png" alt="Icon of Linkedin logo" class="sm-icon-foremore">
+                        </a>
+                    </div>
+                    <p>LINKEDIN</p>
+                </div>
+                <div class="icon-container">
+                    <div class="icon-circle">
+                        <a href="https://github.com/ClaireCaudwell" target="_blank">
+                            <img src="./assets/Github.png" alt="Icon of GitHub logo" class="sm-icon-foremore">
+                        </a>
+                    </div>
+                    <p>GITHUB</p>
+                </div>
+                <div class="icon-container">
+                    <div class="icon-circle">
+                        <a href="https://stackexchange.com/users/19239637/" target="_blank">
+                            <img src="./assets/Stack.png" alt="Icon of Stackoverflow logo" class="sm-icon-foremore">
+                        </a>
+                    </div>
+                    <p>STACKOVERFLOW</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contact details -->
+        <footer>
             <div>
-                <h4 tabindex="0" class="thoughts-title"><span class="thoughts-date">Aug 2020  </span>The bootcamp has officially begun!!<span class="text-description"> >></span></h4>
+                <h2 tabindex="0" class="main-title-footer">CONTACT</h2>
+                <P tabindex="0" class="footer-name">Claire Caudwell</P>
+                <p tabindex="0">+46 00000 0000</p>
+                <p tabindex="0">email</p>
             </div>
-            <div>
-                <h4 tabindex="0" class="thoughts-title"><span class="thoughts-date">July 2020  </span>Trying to learn as much as my brain can handle before the bootcamp begins!<span class="text-description"> >></span></h4>
-            </div>
-        </div>
-    </article>
-
-    <!-- SKILLS: List of my skills -->
-    <aside class="skills-section">
-        <h2 tabindex="0" class="main-title">SKILLS</h2>
-        <div class="skills-container">
-            <div class="skills-card">
-                <h4 tabindex="0">CODE</h4>
-                <p tabindex="0">HTML 5</p>
-                <p tabindex="0">CSS3</p>
-                <p tabindex="0">JavaScript ES6</p>
-                <p tabindex="0">GitHub</p> 
-            </div>
-            <div class="skills-card">
-                <h4 tabindex="0">UPCOMING</h4>
-                <p tabindex="0">REACT</p>
-                <p tabindex="0">Node.js</p>
-                <p tabindex="0">Redux</p>                
-            </div>
-            <div class="skills-card">
-                <h4 tabindex="0">TOOLBOX</h4>
-                <p tabindex="0">Photoshop</p>
-                <p tabindex="0">Illustrator</p>
-                <p tabindex="0">Microsoft office</p>
-                <p tabindex="0">Slack</p>                
-            </div>
-            <div class="skills-card">
-                <h4 tabindex="0">MORE</h4>
-                <p tabindex="0">Pair programming</p>
-                <p tabindex="0">Mob programming</p>
-                <p tabindex="0">Colour</p>
-                <p tabindex="0">Patterns</p>
-                <p tabindex="0">Graphic design</p>
-                <p tabindex="0">Design concept</p>
-                <p tabindex="0">Design development<p>
-            </div>
-        </div>        
-    </aside>
-
-    <!-- FOR MORE: Links to other social media etc -->
-    <aside class="formore-section">
-        <h2 tabindex="0" class="main-title">FOR MORE</h2>
-        <div class="formore-container">
-            <div class="icon-container">
-                <div class="icon-circle">
-                    <a href="https://www.linkedin.com/in/claire-caudwell-229354a5/" target="_blank">
-                        <img src="./assets/Linkedin.png" alt="Icon of Linkedin logo" class="sm-icon">
-                    </a>
-                </div>
-                <p>LINKEDIN</p>
-            </div>
-            <div class="icon-container">
-                 <div class="icon-circle">
-                    <a href="https://github.com/ClaireCaudwell" target="_blank">
-                        <img src="./assets/Github.png" alt="Icon of GitHub logo" class="sm-icon">
-                    </a>
-                </div>
-                <p>GITHUB</p>
-            </div>
-            <div class="icon-container">
-                <div class="icon-circle">
-                    <a href="https://stackexchange.com/users/19239637/" target="_blank">
-                        <img src="./assets/Stack.png" alt="Icon of Stackoverflow logo" class="sm-icon">
-                    </a>
-                </div>
-                <p>STACKOVERFLOW</p>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Contact details -->
-    <footer>
-        <h2 tabindex="0" class="main-title-footer">CONTACT</h2>
-        <P tabindex="0" class="footer-name">Claire Caudwell</P>
-        <p tabindex="0">+46 00000 0000</p>
-        <p tabindex="0">email</p>
-    </footer>    
+           
+        </footer>
+    </main>    
 </body>
 </html>
