@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Claire Caudwell Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>&#127803; Claire Caudwell Portfolio</title>
 </head>
 <body>
-    <!--TOP SECTION: Section for hero image, social media icons, portfolio: Name, Title: Frontend developer + designer and image in circle of me  -->
     <main class="main-container">
+        <!-- HEADER SECTION  -->
         <header class="hero-image">
             <!-- DIV for social media icons -->
             <div class="socialmedia-container">           
@@ -38,31 +42,31 @@
                 <h1 tabindex="0" class="headertext-one">frontend developer</h1>
                 <h3 tabindex="0" class="headertext-two">+ designer</h3>
                 <!-- DIV for image in circle -->
-                <div tabindex="0" class="profile-image-container">
-                    <img src="./assets/Claire-2.png" alt="Image of Claire" class="profile-image">
+                <div class="profile-image-container">
+                    <img tabindex="0" src="./assets/Claire-2.png" alt="Image of Claire" class="profile-image">
                 </div>
             </div>
         </header>
 
         <!-- SUMMARY SECTION -->
-        <section  class="summary-container">
-            <p tabindex="0"><span class="cylinder"></span><span class="circle"></span> Hello! I'm Claire, a frontend developer who has a background in textile and pattern design. I have a Bachelor's degree in textile design and have worked in the industry as a print designer. I'm currently on my frontend developer journey at the Technigo Bootcamp.</p>      
+        <section class="container grey-background">
+            <p tabindex="0" class="summary-text"><span class="cylinder"></span><span class="circle"></span> Hello! I'm Claire, a frontend developer who has a background in textile and pattern design. I have a Bachelor's degree in textile design and have worked in the industry as a print designer. I'm currently on my frontend developer journey at the Technigo Bootcamp.</p>      
         </section>
 
-        <!-- TECH section -->
-        <aside class="tech-container">
+        <!-- TECH SECTION -->
+        <aside class="container white-background">
             <h3 tabindex="0" class="main-title">TECH</h3>
-            <div class="tech-details">
-                <p tabindex="0" class="main-description">HTML, CSS, <span class="text-highlight">JavaScript</span>, Flexbox, API's, Mob & pair programming, <span class="text-highlight">web accessibility</span> and GitHub.</p>
+            <div class="tech-details-container">
+                <p tabindex="0" class="tech-details-description">HTML, CSS, <span class="text-highlight">JavaScript</span>, Flexbox, API's, Mob & pair programming, <span class="text-highlight">web accessibility</span> and GitHub.</p>
             </div>
         </aside>
 
-        <!-- FEATURED & OTHER PROJECTS: Projects I'm most proud of & other ones go here -->
-        <section class="project-section">
+        <!-- FEATURED & OTHER PROJECTS -->
+        <section class="container grey-background">
             <!-- MOST PROUD PROJECTS -->
             <h2 tabindex="0" class="main-title">FEATURED PROJECTS</h2>
-            <div class="projects-container">
-                <div class="project-card">
+            <div class="card-container">
+                <div class="card">
                     <a href="https://github.com/ClaireCaudwell/project-weather-app" target="_blank">
                         <div class="image-container" aria-hidden="true">
                             <div class="image-title">WEATHER APP</div>
@@ -77,7 +81,7 @@
                         <p>API's</p>
                     </div>  
                 </div>
-                <div class="project-card">
+                <div class="card">
                     <a href="https://github.com/ClaireCaudwell/project-business-site" target="_blank">
                         <div class="image-container" aria-hidden="true">
                             <div class="image-title">BUSINESS SITE</div>
@@ -92,7 +96,7 @@
                         <p>Responsive</p>
                     </div>  
                 </div>
-                <div class="project-card hide">
+                <div class="card hide-one">
                     <a href="https://github.com/ClaireCaudwell/project-cluedo" target="_blank">
                         <div class="image-container" aria-hidden="true">
                             <div class="image-title">CLUEDO GAME</div>
@@ -107,7 +111,7 @@
                         <p>Animation</p>
                     </div>   
                 </div>
-                <div class="project-card hide">
+                <div class="card hide-one">
                     <a href="https://github.com/ClaireCaudwell/project-pizza-bot" target="_blank" tabindex="0">
                         <div class="image-container" aria-hidden="true">
                             <div class="image-title">PIZZABOT</div>
@@ -125,8 +129,8 @@
             </div>
             <!-- OTHER PROJECTS --> 
             <h2 tabindex="0" class="main-title">OTHER PROJECTS</h2>
-            <div class="other-projects-container">
-                <div class="other-projects-card hide2">
+            <div class="row-container">
+                <div class="other-projects-card hide-three">
                     <a href="https://github.com/ClaireCaudwell/project-cluedo" target="_blank">
                         <p class="project-text"><span class="text-highlight"> CLUEDO MYSTERY PICKER:</span> An interactive and randomized card game created using Javascript and CSS  <span class="text-highlight">&#707;&#707;</span></p>            
                     </a>            
@@ -134,10 +138,11 @@
                         <p>HTML5</p>
                         <p>CSS 3</p>
                         <p>JavaScript ES6</p>
+
                         <p>Animation</p>
                     </div>  
                 </div>
-                <div class="other-projects-card hide2">
+                <div class="other-projects-card hide-three">
                     <a href="https://github.com/ClaireCaudwell/project-pizza-bot" target="_blank">
                         <p class="project-text"><span class="text-highlight"> PIZZA-BOT:</span> A pair programming project where we created a pizza bot using javascript and CSS <span class="text-highlight">&#707;&#707;</span></p>            
                     </a>            
@@ -173,16 +178,16 @@
         </section>
 
         <!-- MY THOUGHTS SECTION: Almost like a blog post area -->
-        <article>
+        <article class="container white-background">
             <h2 tabindex="0" class="main-title">CODING THOUGHTS</h2> 
-            <div class="thoughts-container">          
-                <div class="thoughts-card">
+            <div class="card-container">          
+                <div class="card extra-details">
                     <img src="./assets/my-thoughts.jpg" alt="Image of a desk with a computer, a cup of coffee and some post-it notes scrumpled up. Link to article."  tabindex="0" class="image">
                     <p tabindex="0" class="thoughts-date">OCT 2020</p>
                     <h4 tabindex="0" class="thoughts-title">CREATING MY PORTFOLIO: The experience </h4>
                     <p tabindex="0" class="thoughts-text">This week has been about creating our own portfolio. A combination of HTML and CSS were used to create the page. We were also set the task to make sure that the page was compatible across different browsers. And that it is accessible to people using screen readers and keyboards.<span class="text-highlight"> &#707;&#707;</span></p>
                 </div>
-                <div class="thoughts-card dissapear">
+                <div class="card extra-details hide-two">
                     <img src="./assets/code.jpg" alt="Image of computer code. Link to article."  tabindex="0" class="image">
                     <p tabindex="0" class="thoughts-date">SEPT 2020</p>
                     <h4 tabindex="0" class="thoughts-title">LEARNING TO CODE: What I've learnt so far on my coding journey </h4>
@@ -190,8 +195,8 @@
                 </div>
             </div> 
             <h2 tabindex="0" class="main-title">OTHER THOUGHTS</h2>
-            <div class="other-thoughts-container">
-                <div class="other-thoughts-card dontshow">
+            <div class="row-container">
+                <div class="other-thoughts-card hide-four">
                     <h4 tabindex="0" class="thoughts-title"><span class="thoughts-date">Sept 2020  </span>What I've learnt so far on my coding journey<span class="text-highlight"> &#707;&#707;</span></h4>
                 </div>
                 <div class="other-thoughts-card">
@@ -207,7 +212,7 @@
         </article>
 
         <!-- SKILLS: List of my skills -->
-        <aside class="skills-section">
+        <aside class="container grey-background">
             <h2 tabindex="0" class="main-title">SKILLS</h2>
             <div class="skills-container">
                 <div class="skills-card">
@@ -251,7 +256,7 @@
         </aside>
 
         <!-- FOR MORE: Links to other social media etc -->
-        <aside class="formore-section">
+        <aside class="container white-background">
             <h2 tabindex="0" class="main-title">FOR MORE</h2>
             <div class="formore-container">
                 <div class="icon-container">
@@ -282,7 +287,7 @@
         </aside>
 
         <!-- Contact details -->
-        <footer>
+        <footer class="container green-background">
             <div>
                 <h2 tabindex="0" class="main-title-footer">CONTACT</h2>
                 <P tabindex="0" class="footer-name">Claire Caudwell</P>
