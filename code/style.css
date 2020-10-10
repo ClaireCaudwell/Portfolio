@@ -91,7 +91,7 @@ header {
     font-weight: 700;
 }
 
-.header-text-container h1 {
+.headertext-one {
     width: 210px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -99,7 +99,7 @@ header {
     margin: 0;
 }
 
-.header-text-container h3 {
+.headertext-two {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -120,10 +120,9 @@ header {
     object-fit: contain;
 }
 
-/* SUMMARY SECTION */
-.summary-container {
+/* Classes for summary, tech, projects, for more, my thoughts and skills sections */
+.container {
     width: 100%;
-    background:rgb(244, 244, 244);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,9 +130,22 @@ header {
     padding: 30px 0px;
 }
 
-.summary-container p {
+.grey-background {
+    background: rgb(244, 244, 244);
+}
+
+.white-background {
+    background: rgb(255, 255, 255);
+}
+
+.green-background {
+    background: rgb(170, 219, 189);
+}
+
+/* SUMMARY SECTION */
+.summary-text {
     font-family: 'Montserrat', sans-serif;
-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     width: 80%;
     margin: 0 auto;
@@ -158,24 +170,7 @@ color: rgb(0, 0, 0);
     display: inline-block;
 }
 
-/* TECH SECTION */
-
-.tech-container {
-    width: 100%;
-    background:rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-}
-
-.tech-details {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
+/* Main title for each main title on each section */
 .main-title {
     display: inline;
     font-family: 'Montserrat', sans-serif;
@@ -186,9 +181,17 @@ color: rgb(0, 0, 0);
     margin: 10px 0;
     color:rgb(255, 255, 255);
     text-align: center;
+    border-radius: 2px;
 }
 
-.main-description {
+/* TECH SECTION */
+.tech-details-container {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tech-details-description {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -197,38 +200,21 @@ color: rgb(0, 0, 0);
 }
 
 /* PROJECT SECTION */
-.project-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0px;
-    background:rgb(244, 244, 244);
-}
-
-.projects-container {
+.card-container {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 20px auto;
 }
 
-.project-card {
+.card {
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
 }
 
-.project-card a {
+.card a {
     text-decoration: none;
-}
-
-.project-text:hover {
-    text-decoration: underline;
-}
-
-.hide {
-    display: none;
 }
 
 .image-container {
@@ -264,7 +250,13 @@ color: rgb(0, 0, 0);
     object-fit: cover;
 }
 
-.other-projects-container {
+/* Class that hides the 3rd and 4th project cards on the mobile view */
+.hide-one {
+    display: none;
+}
+
+/* OTHER PROJECTS */
+.row-container {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -321,47 +313,14 @@ color: rgb(0, 0, 0);
 }
 
 /* MY THOUGHTS SECTION */
-
-article {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0px;
-    background:rgb(255, 255, 255);
-}
-
-.thoughts-container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 20px auto;
-}
-
-.thoughts-card {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0px;
+.extra-details {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 
-.dissapear {
+/* Hides the second card in the thoughts section on mobile view */
+.hide-two {
     display: none;
-}
-
-.other-thoughts-container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 10px auto;
-}
-
-.other-thoughts-card {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
 }
 
 .thoughts-date {
@@ -385,18 +344,14 @@ article {
     line-height: 2;
 }
 
-/* SKILLS SECTION */
-
-.skills-section {
-    width: 100%;
+.other-thoughts-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-    background:rgb(244, 244, 244);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
+/* SKILLS SECTION */
 .skills-container {
     display: flex;
     flex-direction: row;
@@ -429,17 +384,6 @@ article {
 }
 
 /* FOR MORE SECTION */
-
-.formore-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-    background:rgb(255, 255, 255);
-}
-
 .formore-container {
     width: 80%;
     display: flex;
@@ -465,20 +409,10 @@ article {
 }
 
 /* FOOTER */
-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-    background:rgb(244, 244, 244);
-}
-
 footer div {
     width: 80%;
     margin: 0 auto;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -498,10 +432,6 @@ footer p {
     font-weight: 400;
     margin: 5px 0;
 }
-
-/* .hide {
-    display: none;
-} */
 
 @media(max-width: 370px) {
     .socialmedia-container {
@@ -538,31 +468,31 @@ footer p {
         font-size: 21px;
     }
     
-    .header-text-container h1 {
+    .headertext-one {
         font-size: 50px;
     }
     
-    .header-text-container h3 {
+    .headertext-two {
         font-size: 33px;
         margin-top: 5px;
     }
 
-    .summary-container p {
+    .summary-text {
         width: 60%;
         font-size: 20px;
     }
 
-    .main-description {
+    .tech-details-description {
         font-size: 20px;
     }
 
-    .projects-container {
+    .card-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .project-card{
+    .card {
         width: 45%;
         margin-bottom: 20px;
     }
@@ -580,33 +510,23 @@ footer p {
         margin-right: 6px;
     }
 
-    .other-projects-container {
-        display: flex;
-        flex-direction: column;       
-    }
-
     .other-projects-card {
         width: 100%;
         margin: 0 auto;
     }
 
-    .hide {
+    /* Shows the last two project cards that were hidden in the mobile view */
+    .hide-one {
         display: block;
     }
 
-    .hide2 {
+    /* Hides the other projects row-container in tablet & desktop view */
+    .hide-three {
         display: none;
     }
 
-    .thoughts-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .thoughts-card{
-        width: 45%;
-        margin-bottom: 20px;
+    /* Extra details that are different between the sections for the card class */
+    .extra-details{
         font-size: 20px;
     }
 
@@ -614,15 +534,17 @@ footer p {
         font-size: 20px;
     }
 
-    .dissapear {
+    /* Shows the second card in the my thoughts section which is not visible in mobile view */
+    .hide-two {
         display: block;
-    }
+    } 
 
-    .dontshow {
+    /* Hides the other thoughts row container which were visible for the mobile view */
+    .hide-four {
         display: none;
     }
-
-    .tech-details, .formore-container  {
+    
+    .tech-details-container, .formore-container  {
         width: 60%;
     }
 
@@ -640,7 +562,7 @@ footer p {
 }
 
 @media (min-width: 1024px) {
-    .project-card, .thoughts-card{
+    .card{
         max-width: 40%;
     }
 
@@ -669,13 +591,13 @@ footer p {
         font-size: 22px;        
     }
     
-    .header-text-container h1 {
+    .headertext-one {
         font-size: 58px;
         margin-right: 200px;
         width: 500px;
     }
     
-    .header-text-container h3 {
+    .headertext-two {
         font-size: 42px;
     }
 }
