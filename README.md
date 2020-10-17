@@ -1,4 +1,4 @@
-# Portfolio project:
+# Portfolio project 🌼
 This week's project was about us building our portfolio page, where we can showcase ourselves as frontend developers, our skills and projects we’ve created so far on the bootcamp. As I have signed up for the career coaching program I had to follow the design template that was outlined. 
 
 # The requirements:
