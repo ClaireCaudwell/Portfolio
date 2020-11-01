@@ -37,7 +37,7 @@ header {
     align-items: flex-end;
     justify-content: center;
     margin-top: 50px;
-    margin-left: 190px;
+    margin-left: 170px;
     margin-bottom: 20px;
 }
 
@@ -347,6 +347,10 @@ header {
     object-fit: cover;   
 }
 
+.thoughts-text:hover {
+    text-decoration: underline;
+}
+
 /* Hides the second card in the thoughts section on mobile view */
 .hide-two {
     display: none;
@@ -417,7 +421,7 @@ header {
 
 /* FOR MORE SECTION */
 .formore-container {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -465,9 +469,9 @@ footer p {
     margin: 5px 0;
 }
 
-@media(max-width: 370px) {
+@media(max-width: 377px) {
     .socialmedia-container {
-        margin-left: 130px;
+        margin-left: 80px;
     }
 }
 
@@ -631,5 +635,9 @@ footer p {
     
     .headertext-two {
         font-size: 42px;
+    }
+
+    .formore-container {
+        width: 40%;
     }
 }
