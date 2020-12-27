@@ -385,6 +385,11 @@ header {
     font-size: 18px;
 }
 
+.other-thoughts-card a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
 /* SKILLS SECTION */
 .skills-container {
     display: flex;
