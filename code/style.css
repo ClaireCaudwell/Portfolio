@@ -556,6 +556,10 @@ footer p {
         margin: 0 auto;
     }
 
+    .hide-widerscreen{
+        display: none;
+    }
+
     /* Shows the last two project cards that were hidden in the mobile view */
     .hide-one {
         display: block;
